@@ -1,0 +1,6 @@
+CREATE TABLE user_details (
+	id SERIAL NOT NULL,
+	name VARCHAR NOT NULL,
+	email VARCHAR NOT NULL,
+	password VARCHAR NOT NULL
+);
