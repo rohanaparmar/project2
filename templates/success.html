@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Success!
+{% endblock %}
+
+{% block body %}
+<body onload="alert1()">
+<script >
+	function alert1(){
+		alert( document.querySelector("input").value );
+		return false;
+	}
+</script>
+		<input type="text" value="{{message}}" style="display:none"/>
+    <h1>Success!</h1>
+	<h4 id="message">{{ message }}</h4>
+	<br>
+	
+	<a href="{{ url_for('index') }}">Click here for go to home page</a>
+</body>
+{% endblock %}
